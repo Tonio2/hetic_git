@@ -16,7 +16,6 @@ args, unknown = parser.parse_known_args()
 if unknown and unknown[0] in ("ls-files", "ls_files"):
     ls_files()
     sys.exit(0)
-
 # Sinon, on reste sur le comportement existant
 print(f"L'option de hashage a pour valeur {args.force}")
 
