@@ -1,10 +1,8 @@
 from Objects.tree import Tree
 
 import os
-print(os.listdir("./test/"))
 
-files = os.listdir("./test/")
+files = os.listdir("./test/fichiers/")
 
 tree = Tree()
-tree.setTree([os.path.join("./test/", f) for f in files])
-print(tree.sha1)
+tree.setTree([os.path.join("./test/fichiers/", f) for f in files])
