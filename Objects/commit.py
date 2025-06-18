@@ -7,6 +7,8 @@ class Commit:
         
         # Construction du contenu du commit
         commit_content = f"tree {tree_sha1}\n"
+        commit_content += f"message {message}\n"
+        commit_content += f"date {datetime.datetime.now().isoformat()}\n"
         if parent_sha1:
             commit_content += f"parent {parent_sha1}\n"
 
